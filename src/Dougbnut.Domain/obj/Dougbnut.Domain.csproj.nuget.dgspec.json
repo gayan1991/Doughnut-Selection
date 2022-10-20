@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\nadee\\source\\repos\\gayan1991\\Doughnut-Selection\\src\\Dougbnut.Domain\\Dougbnut.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nadee\\source\\repos\\gayan1991\\Doughnut-Selection\\src\\Dougbnut.Domain\\Dougbnut.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nadee\\source\\repos\\gayan1991\\Doughnut-Selection\\src\\Dougbnut.Domain\\Dougbnut.Domain.csproj",
+        "projectName": "Dougbnut.Domain",
+        "projectPath": "C:\\Users\\nadee\\source\\repos\\gayan1991\\Doughnut-Selection\\src\\Dougbnut.Domain\\Dougbnut.Domain.csproj",
+        "packagesPath": "C:\\Users\\nadee\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nadee\\source\\repos\\gayan1991\\Doughnut-Selection\\src\\Dougbnut.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\nadee\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://pkgs.dev.azure.com/chuunpaan/ChuunPaan/_packaging/ChuunPaanResources/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
