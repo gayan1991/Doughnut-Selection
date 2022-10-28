@@ -66,7 +66,7 @@ namespace Doughnut.Infrastructure.Repository
 
         public Task UpsertDoughnutSelectionAsync(DoughnutSelection selection)
         {
-            
+            return Task.CompletedTask;
         }
     }
 }

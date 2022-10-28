@@ -33,9 +33,9 @@ namespace Doughnut.Infrastructure.Repository
 
         #endregion
 
-        public Task<List<RefSelectionProcess>> GetSelectionsBasedOnCodeAsync(int code)
+        public Task<RefSelectionProcess?> GetSelectionBasedOnCodeAsync(int code)
         {
-            return _db.RefSelectionProcess.Where(exp => exp.Code == code).ToListAsync();
+            return _db.RefSelectionProcess.FirstOrDefaultAsync(exp => exp.ParentCode == code);
         }
     }
 }

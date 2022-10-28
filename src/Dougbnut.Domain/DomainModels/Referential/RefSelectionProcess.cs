@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Doughnut.Domain.DomainModels.DoughnutSelection;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,11 @@ namespace Doughnut.Domain.DomainModels.Referential
         public byte? ParentCode { get; set; }
         public string Text { get; set; }
         public string? Action { get; set; }
+        
+
+        private readonly List<RefSelectionProcess> _next = new();
+        public IReadOnlyList<RefSelectionProcess> NextSelection => _next;
+
 
         public RefSelectionProcess(byte code, string text, string? action = null)
         {
@@ -27,6 +33,11 @@ namespace Doughnut.Domain.DomainModels.Referential
             ParentCode = parentCode;
             Text = text;
             Action = action;
+        }
+
+        public void AddNextSelection(RefSelectionProcess obj)
+        {
+            _next.Add(obj);
         }
     }
 }

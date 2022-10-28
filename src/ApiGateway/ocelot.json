@@ -1,0 +1,64 @@
+{
+  "Routes": [
+    //Authentication
+    {
+      "DownstreamPathTemplate": "/{everything}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 6001
+        }
+      ],
+      "SwaggerKey": "admin",
+      "UpstreamPathTemplate": "/{everything}",
+      "UpstreamHttpMethod": [ "Get" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/doughnut/{everything}",
+      "DownstreamSchema": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7289
+        }
+      ],
+      "UpstreamPathTemplate": "/doughnut/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post" ],
+      "SwaggerKey": "doughnut",
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+      }
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "admin",
+      "Config": [
+        {
+          "Name": "Admin API",
+          "Version": "v1",
+          "Url": "https://localhost:6001/swagger/index.html"
+        }
+      ]
+    },
+    {
+      "Key": "doughnut",
+      "Config": [
+        {
+          "Name": "Doughnut API",
+          "Version": "v1",
+          "Url": "http://doughnut-api/swagger/v1/swagger.json"
+        }
+      ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:6009"
+  }
+}

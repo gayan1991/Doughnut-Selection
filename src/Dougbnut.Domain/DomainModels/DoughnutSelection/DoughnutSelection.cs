@@ -7,7 +7,7 @@ namespace Doughnut.Domain.DomainModels.DoughnutSelection
         public Guid Id { get; set; }
         public Guid UserId { get; set; }
 
-        private readonly List<DoughnutSelectionSteps> _steps = new List<DoughnutSelectionSteps>();
+        private readonly List<DoughnutSelectionSteps> _steps = new();
         public IReadOnlyList<DoughnutSelectionSteps> Steps => _steps;
 
         public DoughnutSelection(Guid userId, string createdBy = "System") : base(createdBy)

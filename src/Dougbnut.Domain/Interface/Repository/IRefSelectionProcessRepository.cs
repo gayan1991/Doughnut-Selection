@@ -4,6 +4,6 @@ namespace Doughnut.Domain.Interface.Repository
 {
     public interface IRefSelectionProcessRepository: IRepository<RefSelectionProcess>
     {
-        Task<List<RefSelectionProcess>> GetSelectionsBasedOnCodeAsync(int code);
+        Task<RefSelectionProcess?> GetSelectionBasedOnCodeAsync(int code);
     }
 }
